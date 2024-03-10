@@ -16,18 +16,27 @@
 QMC5883LCompass compass;
 SoftwareSerial gps;
 
-// hardcoded inputs
-float targetLong = 0;
-float targetLat = 0;
-
-struct GPSData
+class Coordinates
 {
+public:
+  Coordinates(float inputLat, float inputLong)
+  {
+    longitude = inputLong;
+    latitude = inputLat;
+  }
+
   float longitude = 999;
   float latitude = 999;
-  bool isValid = false;
+
+  bool isValid()
+  {
+    return (abs(latitude) <= 180.0 || abs(longitude) <= 180.0);
+  }
 };
 
-GPSData gpsData;
+Coordinates coordinates;
+Coordinates target;
+float heading = 999;
 
 float parseLatLong(String input)
 {
@@ -45,15 +54,16 @@ float parseLatLong(String input)
 
 void getGPSData()
 {
-
+  // todo test if working
   while (gps.available())
   {
     gps.read();
     if (gps.find("$GPGLL,"))
     {
-      GPSData newGPSData = GPSData();
-      String nmeaSentence;
-      nmeaSentence = gps.readStringUntil('\n');
+      float newLat = 999;
+      float newLong = 999;
+      bool validity = false;
+      String nmeaSentence = gps.readStringUntil('\n');
       for (int i = 0; i < 6; i++)
       {
         int delimiterIndex = nmeaSentence.indexOf(",");
@@ -63,27 +73,27 @@ void getGPSData()
         switch (i)
         {
         case 0: // latitude
-          newGPSData.latitude = parseLatLong(token);
+          newLat = parseLatLong(token);
           break;
         case 1: // N/S indicator
           if (token == "S")
           {
-            newGPSData.latitude *= -1.0;
+            newLat *= -1.0;
           }
           break;
         case 2: // longitude
-          newGPSData.longitude = parseLatLong(token);
+          newLong = parseLatLong(token);
           break;
         case 3: // S/W indicator
           if (token == "W")
           {
-            newGPSData.longitude *= -1.0;
+            newLong *= -1.0;
           }
           break;
         case 5: // validity flag
           if (token = "A")
           {
-            newGPSData.isValid = true;
+            validity = true;
           }
           break;
         default:
@@ -92,16 +102,11 @@ void getGPSData()
 
         nmeaSentence = nmeaSentence.substring(delimiterIndex + 1);
       }
-      if (!newGPSData.isValid)
-        return; // exit early if invalid
+      if (!validity)
+        return; // exit early if invalidz
 
-      if (abs(newGPSData.latitude) > 180.0 || abs(newGPSData.longitude) > 180.0)
-        return;
-
-      gpsData = newGPSData;
+      coordinates = Coordinates(newLat, newLong);
     }
-
-
   }
 }
 
@@ -114,23 +119,45 @@ void getMagnetometerData()
   x = compass.getX();
   y = compass.getY();
 
-  float heading = atan2(y, x) + 180 / PI;
+  heading = atan2(y, x) + 180 / PI;
 
-  float declinationAngle = (0.015 * gpsData.longitude) + 1;
+  if (!coordinates.isValid())
+    return;
+
+  float declinationAngle = (0.015 * coordinates.longitude) + 1;
 
   heading += declinationAngle;
 }
 
-void navigationLoop(void *parameters)
+void getBearingToTarget()
 {
-  getGPSData();
-  getMagnetometerData();
+  float x = coordinates.longitude - target.longitude;
+  float y = coordinates.latitude - target.latitude;
+
+  // todo calculate liwat
+  // float theta
+}
+
+float getTargetDistance()
+{
+  return sqrt(sq(coordinates.latitude - target.latitude) + sq(coordinates.longitude - target.longitude));
+}
+
+void navigate()
+{
+  // return early and do not start motors if current and target coordinates are invalid
+  if (!coordinates.isValid() || !target.isValid())
+    return;
+
+  // todo
 }
 
 void setup()
 {
   Serial.begin(9600);
   Wire.begin(MAGNETOMETER_SDA_PIN, MAGNETOMETER_SCL_PIN);
+
+  // todo assign tasks
 }
 
 void loop()
