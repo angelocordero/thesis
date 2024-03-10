@@ -1,0 +1,28 @@
+# Fdb version 4
+["pdflatex"] 1707839949 "/home/angelo/Dev/Latex/thesis/thesis.tex" "thesis.pdf" "thesis" 1707839949 0
+  "/home/angelo/Dev/Latex/thesis/thesis.tex" 1707839949 155 3c5d3ea1567a36dba9b9b41d12780de2 ""
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1704400182 1524 4414a8315f39513458b80dfc63bff03a ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1704400182 1512 f21f83efb36853c0b70002322c1ab3ad ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1704400182 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1704400182 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1704400182 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1704400182 1300 b62933e007d01cfd073f79b963c01526 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1704400182 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1704400182 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1704400182 1116 933a60c408fc0a863a92debe84b2d294 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1704400182 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1704400182 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/tex/latex/base/report.cls" 1704400182 23203 3d69f4661dd74a5edb1507ff18e40fb9 ""
+  "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1704400182 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
+  "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704400182 30429 213676d4c7327a21d91ddaed900e7b81 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1704400182 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1706863806 330199 46a20a50e9395e2d080bc00975dd792a ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706863792 6768061 b89e6b6317fd24d31625e5947c2fdb44 ""
+  "thesis.aux" 1707839949 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "thesis.tex" 1707839949 155 3c5d3ea1567a36dba9b9b41d12780de2 ""
+  (generated)
+  "thesis.aux"
+  "thesis.log"
+  "thesis.pdf"
+  (rewritten before read)
