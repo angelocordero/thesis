@@ -1,22 +1,24 @@
-\documentclass{report}
+\documentclass[twoside, letterpaper]{report}
 
-\usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{titlesec}
 \usepackage{tabularx}
+% \usepackage{showframe}
+\usepackage[english]{babel}
+\usepackage[twoside]{fancyhdr}
 \usepackage[skip=10pt]{parskip}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 
 \geometry{
-    left=2.5cm,
-    right=2.5cm,
-    top=2.5cm,
-    bottom=2.5cm,
+top = 0.75in,
+bottom = 0.75in,
+outer = 0.75in,
+inner = 1.5in,
 }
 
-\textheight = 8in
+\textheight = 8.5in
 
 \renewcommand{\thispagestyle}[1]{} 
 \renewcommand{\headrulewidth}{0pt}
@@ -31,13 +33,11 @@
     
 \setlength{\headheight}{75pt}
 \headsep = 10pt
-% \footnotesep = -0pt
 
 \fancyhf{} 
 \fancyhead[C]{\raisebox{1cm}{\parbox{\headwidth}{\centering \textbf{\large WESTERN INSTITUTE OF TECHNOLOGY} \\ \textbf{La Paz, Iloilo City} \\ \underline{COLLEGE OF ENGINEERING} \\ DEPARTMENT OF COMPUTER ENGINEERING}}} 
 \fancyhead[L]{\includegraphics[width=2.5cm]{assets/WIT_logo.png}}
 \fancyhead[R]{\raisebox{0.5cm}{\includegraphics[width=3cm]{assets/GCL.jpg}}}
-\fancyfoot[R]{\thepage}
 
 
 \title{\vspace{-3cm} MODULAR SELF-NAVIGATING UNMANNED SURFACE DRONE FOR MARINE APPLICATIONS\\}
@@ -50,16 +50,24 @@
 
 \pagestyle{fancy}
 
-\begin{document} 
+\begin{document}
+
 \maketitle
+
 
 \include{chapters/approval_sheet}
 \include{chapters/acknowledgement}
 \include{chapters/abstract}
+
+\cleardoublepage
 \tableofcontents
+\cleardoublepage
 
+\pagenumbering{arabic}
+
+\fancyfoot[OR]{\thepage}
+\fancyfoot[EL]{\thepage}
 \include{chapters/introduction}
-
-
+\include{chapters/review_of_related_literature}
 
 \end{document}

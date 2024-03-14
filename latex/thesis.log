@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.2)  14 MAR 2024 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.2)  15 MAR 2024 04:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -23,17 +23,6 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip50
-\f@nch@O@elh=\skip51
-\f@nch@O@erh=\skip52
-\f@nch@O@olh=\skip53
-\f@nch@O@orh=\skip54
-\f@nch@O@elf=\skip55
-\f@nch@O@erf=\skip56
-\f@nch@O@olf=\skip57
-\f@nch@O@orf=\skip58
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
@@ -74,8 +63,8 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box51
-\beforetitleunit=\skip59
-\aftertitleunit=\skip60
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
 \ttl@plus=\dimen151
 \ttl@minus=\dimen152
 \ttl@toksa=\toks18
@@ -90,8 +79,8 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box52
 \extrarowheight=\dimen157
 \NC@list=\toks19
-\extratabsurround=\skip61
-\backup@length=\skip62
+\extratabsurround=\skip52
+\backup@length=\skip53
 \ar@cellbox=\box53
 )
 \TX@col@width=\dimen158
@@ -101,6 +90,40 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@delta=\dimen162
 \TX@cols=\count197
 \TX@ftn=\toks20
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count198
+\U@D=\dimen163
+\l@unhyphenated=\language3
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count199
+ (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+)) (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
 ) (/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
  (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
@@ -111,11 +134,11 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count198
+\etb@tempcnta=\count266
 )) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks21
-\pgfutil@tempdima=\dimen163
-\pgfutil@tempdimb=\dimen164
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box54
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -130,26 +153,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks24
 ))
-\pgf@x=\dimen165
-\pgf@y=\dimen166
-\pgf@xa=\dimen167
-\pgf@ya=\dimen168
-\pgf@xb=\dimen169
-\pgf@yb=\dimen170
-\pgf@xc=\dimen171
-\pgf@yc=\dimen172
-\pgf@xd=\dimen173
-\pgf@yd=\dimen174
+\pgf@x=\dimen166
+\pgf@y=\dimen167
+\pgf@xa=\dimen168
+\pgf@ya=\dimen169
+\pgf@xb=\dimen170
+\pgf@yb=\dimen171
+\pgf@xc=\dimen172
+\pgf@yc=\dimen173
+\pgf@xd=\dimen174
+\pgf@yd=\dimen175
 \w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count199
-\c@pgf@countb=\count266
-\c@pgf@countc=\count267
-\c@pgf@countd=\count268
+\r@pgf@reada=\read3
+\c@pgf@counta=\count267
+\c@pgf@countb=\count268
+\c@pgf@countc=\count269
+\c@pgf@countd=\count270
 \t@pgf@toka=\toks25
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
-\pgf@sys@id@count=\count269
+\pgf@sys@id@count=\count271
  (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -160,8 +183,8 @@ File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count270
-\pgfsyssoftpath@bigbuffer@items=\count271
+\pgfsyssoftpath@smallbuffer@items=\count272
+\pgfsyssoftpath@bigbuffer@items=\count273
 ) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -183,52 +206,52 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen175
-\pgfmath@count=\count272
+\pgfmath@dimen=\dimen176
+\pgfmath@count=\count274
 \pgfmath@box=\box55
 \pgfmath@toks=\toks28
 \pgfmath@stack@operand=\toks29
 \pgfmath@stack@operation=\toks30
 ) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count273
+\c@pgfmathroundto@lastzeros=\count275
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen176
-\pgf@picmaxx=\dimen177
-\pgf@picminy=\dimen178
-\pgf@picmaxy=\dimen179
-\pgf@pathminx=\dimen180
-\pgf@pathmaxx=\dimen181
-\pgf@pathminy=\dimen182
-\pgf@pathmaxy=\dimen183
-\pgf@xx=\dimen184
-\pgf@xy=\dimen185
-\pgf@yx=\dimen186
-\pgf@yy=\dimen187
-\pgf@zx=\dimen188
-\pgf@zy=\dimen189
+\pgf@picminx=\dimen177
+\pgf@picmaxx=\dimen178
+\pgf@picminy=\dimen179
+\pgf@picmaxy=\dimen180
+\pgf@pathminx=\dimen181
+\pgf@pathmaxx=\dimen182
+\pgf@pathminy=\dimen183
+\pgf@pathmaxy=\dimen184
+\pgf@xx=\dimen185
+\pgf@xy=\dimen186
+\pgf@yx=\dimen187
+\pgf@yy=\dimen188
+\pgf@zx=\dimen189
+\pgf@zy=\dimen190
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen190
-\pgf@path@lasty=\dimen191
+\pgf@path@lastx=\dimen191
+\pgf@path@lasty=\dimen192
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen192
-\pgf@shorten@start@additional=\dimen193
+\pgf@shorten@end@additional=\dimen193
+\pgf@shorten@start@additional=\dimen194
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count274
+\pgf@picture@serial@count=\count276
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen194
+\pgflinewidth=\dimen195
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen195
-\pgf@pt@y=\dimen196
-\pgf@pt@temp=\dimen197
+\pgf@pt@x=\dimen196
+\pgf@pt@y=\dimen197
+\pgf@pt@temp=\dimen198
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -237,12 +260,12 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen198
+\pgfarrowsep=\dimen199
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen199
-\pgf@sys@shading@range@num=\count275
-\pgf@shadingcount=\count276
+\pgf@max=\dimen256
+\pgf@sys@shading@range@num=\count277
+\pgf@shadingcount=\count278
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -263,55 +286,55 @@ File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen256
-\pgf@nodesepend=\dimen257
+\pgf@nodesepstart=\dimen257
+\pgf@nodesepend=\dimen258
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen258
-\pgffor@skip=\dimen259
+\pgffor@iter=\dimen259
+\pgffor@skip=\dimen260
 \pgffor@stack=\toks31
 \pgffor@toks=\toks32
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count277
-\pgfplotmarksize=\dimen260
+\pgf@plot@mark@count=\count279
+\pgfplotmarksize=\dimen261
 )
-\tikz@lastx=\dimen261
-\tikz@lasty=\dimen262
-\tikz@lastxsaved=\dimen263
-\tikz@lastysaved=\dimen264
-\tikz@lastmovetox=\dimen265
-\tikz@lastmovetoy=\dimen266
-\tikzleveldistance=\dimen267
-\tikzsiblingdistance=\dimen268
+\tikz@lastx=\dimen262
+\tikz@lasty=\dimen263
+\tikz@lastxsaved=\dimen264
+\tikz@lastysaved=\dimen265
+\tikz@lastmovetox=\dimen266
+\tikz@lastmovetoy=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
 \tikz@figbox=\box61
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count278
-\tikznumberofchildren=\count279
-\tikznumberofcurrentchild=\count280
-\tikz@fig@count=\count281
+\tikztreelevel=\count280
+\tikznumberofchildren=\count281
+\tikznumberofcurrentchild=\count282
+\tikz@fig@count=\count283
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count282
-\pgfmatrixcurrentcolumn=\count283
-\pgf@matrix@numberofcolumns=\count284
+\pgfmatrixcurrentrow=\count284
+\pgfmatrixcurrentcolumn=\count285
+\pgf@matrix@numberofcolumns=\count286
 )
-\tikz@expandcount=\count285
+\tikz@expandcount=\count287
  (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
+\l__color_backend_stack_int=\count288
 \l__pdf_internal_box=\box65
-) (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux))
+) (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux) (./chapters/review_of_related_literature.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -330,16 +353,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen269
+\scratchcounter=\count289
+\scratchdimen=\dimen270
 \scratchbox=\box66
-\nofMPsegments=\count288
-\nofMParguments=\count289
+\nofMPsegments=\count290
+\nofMParguments=\count291
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen270
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen271
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks34
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -351,24 +374,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* modes: twoside 
+* h-part:(L,W,R)=(108.405pt, 451.6875pt, 54.2025pt)
+* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=472.03123pt
-* \textheight=578.15999pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-38.1381pt
+* \textwidth=451.6875pt
+* \textheight=614.295pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-55.06749pt
 * \headheight=75.0pt
 * \headsep=10.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \marginparwidth=121.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -376,30 +399,30 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 54.
+(Font)              <12> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 54.
+(Font)              <8> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 54.
+(Font)              <6> on input line 55.
 <assets/WIT_logo.png, id=4, 226.8475pt x 226.8475pt>
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 54.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 55.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 54.
+(Font)              <7> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 54.
+(Font)              <5> on input line 55.
 <assets/GCL.jpg, id=6, 279.0425pt x 157.58875pt>
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 54.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 55.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -409,11 +432,11 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 54.
  (./chapters/approval_sheet.tex)
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 56.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 58.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 56.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 58.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [1
 
@@ -424,13 +447,13 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 56.
  (./chapters/acknowledgement.tex)
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 57.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 59.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 57.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 59.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [2
+ [1
 
 
 
@@ -439,48 +462,78 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 57.
 \openout2 = `chapters/abstract.aux'.
 
  (./chapters/abstract.tex
-Overfull \hbox (11.99998pt too wide) in alignment at lines 22--22
+Underfull \hbox (badness 3417) in paragraph at lines 24--24
+[]|\OT1/cmr/m/n/14.4 Modular self-navigating un-manned
+ []
+
+
+Overfull \hbox (11.99998pt too wide) in alignment at lines 24--24
 [][] 
  []
 
 )
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 58.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 60.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 58.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 60.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [3
+ [1
 
+
+
+
+]
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 62.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 62.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [2
 
 
 
 ] (./thesis.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 11.
+(Font)              <14.4> on input line 12.
 )
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 61.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 64.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 61.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 64.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [3
+
+]
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 64.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 64.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [4
-
-
 
 ]
 \openout2 = `chapters/introduction.aux'.
 
  (./chapters/introduction.tex
 Chapter 1.
+
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
 Package pdftex.def Info: assets/WIT_logo.png  used on input line 30.
@@ -489,10 +542,12 @@ File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
 Package pdftex.def Info: assets/GCL.jpg  used on input line 30.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
-[5
+ [1
 
 
 ]
+Underfull \vbox (badness 1755) has occurred while \output is active []
+
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
 Package pdftex.def Info: assets/WIT_logo.png  used on input line 51.
@@ -501,7 +556,7 @@ File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
 Package pdftex.def Info: assets/GCL.jpg  used on input line 51.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [6]
+ [2]
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
 Package pdftex.def Info: assets/WIT_logo.png  used on input line 78.
@@ -510,7 +565,9 @@ File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
 Package pdftex.def Info: assets/GCL.jpg  used on input line 78.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [7]
+ [3]
+Underfull \vbox (badness 3612) has occurred while \output is active []
+
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
 Package pdftex.def Info: assets/WIT_logo.png  used on input line 106.
@@ -519,52 +576,130 @@ File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
 Package pdftex.def Info: assets/GCL.jpg  used on input line 106.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [8]
+ [4]
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 129.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 128.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 129.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 128.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [9]
-<assets/3d_model_complete.png, id=46, 513.92pt x 289.08pt>
+ [5]
+<assets/3d_model_complete.png, id=52, 513.92pt x 289.08pt>
 File: assets/3d_model_complete.png Graphic file (type png)
 <use assets/3d_model_complete.png>
-Package pdftex.def Info: assets/3d_model_complete.png  used on input line 139.
+Package pdftex.def Info: assets/3d_model_complete.png  used on input line 138.
 (pdftex.def)             Requested size: 308.35437pt x 173.44933pt.
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 147.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 150.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 147.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 150.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [10 <./assets/3d_model_complete.png>])
+ [6 <./assets/3d_model_complete.png>])
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 61.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 70.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 61.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 70.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [11{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux)) ) 
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+\openout2 = `chapters/review_of_related_literature.aux'.
+
+ (./chapters/review_of_related_literature.tex
+Chapter 2.
+
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 25.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 25.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [8
+
+
+
+
+]
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 39.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 39.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [9]
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 65.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 65.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [10]
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 82.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 82.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [11]
+Overfull \hbox (10.99013pt too wide) in paragraph at lines 100--102
+[] [][] \OT1/cmr/m/n/14.4 https://doi.org/10.1016/j.arcontrol.2015.08.005 Nav-i-ga-tion, guid-ance, and
+ []
+
+
+Underfull \vbox (badness 4353) has occurred while \output is active []
+
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 102.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 102.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [12]
+Overfull \hbox (10.04024pt too wide) in paragraph at lines 105--106
+[] [][] \OT1/cmr/m/n/14.4 https://doi.org/10.1016/j.enavi.2014.12.002 Au-tonomous Un-manned Mer-
+ []
+
+)
+File: assets/WIT_logo.png Graphic file (type png)
+<use assets/WIT_logo.png>
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 71.
+(pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
+File: assets/GCL.jpg Graphic file (type jpg)
+<use assets/GCL.jpg>
+Package pdftex.def Info: assets/GCL.jpg  used on input line 71.
+(pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
+ [13] (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux) (./chapters/review_of_related_literature.aux)) ) 
 Here is how much of TeX's memory you used:
- 13968 strings out of 477985
- 282582 string characters out of 5840059
+ 14988 strings out of 477985
+ 301668 string characters out of 5840059
  1861388 words of memory out of 5000000
- 33906 multiletter control sequences out of 15000+600000
+ 34900 multiletter control sequences out of 15000+600000
  517498 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,16n,89p,1231b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on thesis.pdf (12 pages, 202110 bytes).
+Output written on thesis.pdf (20 pages, 217623 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
