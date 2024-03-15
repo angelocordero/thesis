@@ -6,6 +6,30 @@ Now that the design is in place, the purchase of material will follow, then the 
 functionality, and reliability will be tested.
 
 \section{System Design}
+\begin{figure}[ht]
+\centering \begin{tikzpicture}
+  \node[anchor=north west] (battery) at (0, -0.3) {\includegraphics[width=3cm]{assets/battery.png}};
+  \node[anchor=north west] (converter) at (5, 0) {\includegraphics[width=5cm]{assets/converter.png}};
+  \node[anchor=north west] (esp32) at (6, -3) {\includegraphics[width=3cm]{assets/esp-32.png}};
+  \node[anchor=north west] (magnetometer) at (12, 0) {\includegraphics[width=3cm]{assets/magnetometer.png}};
+  \node[anchor=north west] (gps) at (12, -5) {\includegraphics[width=3cm]{assets/gps_module.png}};
+  \node[anchor=north west] (esc) at (0, -3) {\includegraphics[width=3cm]{assets/esc.png}};
+  \node[anchor=north west] (motor) at (3, -7) {\includegraphics[width=3cm]{assets/motor.png}};
+  \node[anchor=north west] (propeller) at (9, -7.2) {\includegraphics[width=3cm]{assets/propellers.png}};
+
+  \draw[ ->, line width = 1mm, black!70] (battery) to node[] {} (converter);
+  \draw[ ->, line width = 1mm, black!70] (battery) to node[] {} (esc);
+  \draw[ ->, line width = 1mm, black!70] (esp32) to node[] {} (esc);
+  \draw[ ->, line width = 1mm, black!70] (esc) to node[] {} (motor);
+  \draw[ ->, line width = 1mm, black!70] (motor) to node[] {} (propeller);
+  \draw[ ->, line width = 1mm, black!70] (converter) to node[] {} (esp32);
+  \draw[ <->, line width = 1mm, black!70] (esp32) to node[] {} (magnetometer);
+  \draw[ <->, line width = 1mm, black!70] (esp32) to node[] {} (gps);
+
+\end{tikzpicture}
+\caption{System Design}
+\label{fig:SystemDesign}
+\end{figure}
 
 \pagebreak
 
@@ -28,20 +52,20 @@ functionality, and reliability will be tested.
   \node[RECT] (confirmLoc) [below = of droneMoves] {GPS \& magnetometer \\ confirms location data};
   \node[] (dummyNode) [below = of detectsLocationData] {};
   \node[DIAMOND] (doesLocMatch) [below = of dummyNode] {Does drone location match \\ with supplied coordinates?};
-  \node[RECT] (terminate) [right = of doesLocMatch] {Drone terminated};
-  \node[ROUNDEDRECT] (end) [below = of terminate] {End};
+  \node[RECT] (terminate) [below = of doesLocMatch] {Drone terminated};
+  \node[ROUNDEDRECT] (end) [right = of terminate] {End};
 
-  \draw[->, very thick] (start.south) to node[] {} (switchOn.north);
-  \draw[->, very thick] (switchOn.east) to node[] {} (esp32Boot.west);
-  \draw[->, very thick] (esp32Boot.east) to node[] {} (waitForUserInput.west);
-  \draw[->, very thick] (waitForUserInput.south) to node[] {} (coordinatesSupplied.north);
-  \draw[->, very thick] (coordinatesSupplied.west) to node[] {} (detectsLocationData.east);
-  \draw[->, very thick] (detectsLocationData.west) to node[] {} (droneMoves.east);
-  \draw[->, very thick] (droneMoves.south) to node[] {} (confirmLoc.north);
-  \draw[->, very thick] (confirmLoc.south) to node[] {} (doesLocMatch.west);
-  \draw[->, very thick] (doesLocMatch.north) to node[left] {NO} (detectsLocationData.south);
-  \draw[->, very thick] (doesLocMatch.east) to node[above] {YES} (terminate.west);
-  \draw[->, very thick] (terminate.south) to node[] {} (end.north);
+  \draw[ ->, line width = 1mm, black!70] (start.south) to node[] {} (switchOn.north);
+  \draw[ ->, line width = 1mm, black!70] (switchOn.east) to node[] {} (esp32Boot.west);
+  \draw[ ->, line width = 1mm, black!70] (esp32Boot.east) to node[] {} (waitForUserInput.west);
+  \draw[ ->, line width = 1mm, black!70] (waitForUserInput.south) to node[] {} (coordinatesSupplied.north);
+  \draw[ ->, line width = 1mm, black!70] (coordinatesSupplied.west) to node[] {} (detectsLocationData.east);
+  \draw[ ->, line width = 1mm, black!70] (detectsLocationData.west) to node[] {} (droneMoves.east);
+  \draw[ ->, line width = 1mm, black!70] (droneMoves.south) to node[] {} (confirmLoc.north);
+  \draw[ ->, line width = 1mm, black!70] (confirmLoc.south) to node[] {} (doesLocMatch.west);
+  \draw[ ->, line width = 1mm, black!70] (doesLocMatch.north) to node[left] {NO} (detectsLocationData.south);
+  \draw[ ->, line width = 1mm, black!70] (doesLocMatch.south) to node[left] {YES} (terminate.north);
+  \draw[ ->, line width = 1mm, black!70] (terminate.east) to node[] {} (end.west);
 \end{tikzpicture}
 \caption{Flowchart}
 \label{fig:Flowchart}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.2)  16 MAR 2024 03:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.2)  16 MAR 2024 05:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -356,20 +356,20 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux) (./chapters/review_of_related_literature.aux) (./chapters/methodology.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
@@ -424,24 +424,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
+(Font)              <12> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
+(Font)              <6> on input line 63.
 <assets/WIT_logo.png, id=4, 226.8475pt x 226.8475pt>
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 58.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 63.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 58.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 58.
+(Font)              <5> on input line 63.
 <assets/GCL.jpg, id=6, 279.0425pt x 157.58875pt>
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 58.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 63.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -451,11 +451,11 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 58.
  (./chapters/approval_sheet.tex)
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 60.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 65.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 60.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 65.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [1
 
@@ -466,11 +466,11 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 60.
  (./chapters/acknowledgement.tex)
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 61.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 66.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 61.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 66.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [1
 
@@ -482,7 +482,7 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 61.
 
  (./chapters/abstract.tex
 Underfull \hbox (badness 1194) in paragraph at lines 24--24
-[]|\OT1/cmr/m/n/14.4 Modular self-navigating un-manned
+[]|\OT1/cmr/m/n/14.4 Modular self-navigating unmanned
  []
 
 
@@ -493,11 +493,11 @@ Overfull \hbox (12.0pt too wide) in alignment at lines 24--24
 )
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 62.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 67.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 62.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 67.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [1
 
@@ -513,11 +513,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 66.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 71.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 66.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 71.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [1
 
@@ -529,7 +529,12 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 66.
  (./chapters/introduction.tex
 Chapter 1.
 
-Underfull \vbox (badness 2285) has occurred while \output is active []
+Underfull \hbox (badness 2318) in paragraph at lines 23--24
+[]\OT1/cmr/m/n/14.4 Part seven, Definition of Terms, contains the conceptual and
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
@@ -544,7 +549,9 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 30.
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1226) in paragraph at lines 36--40
+[]\OT1/cmr/m/n/14.4 Further adaptation of USV in the early 20th century saw the
+ []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
@@ -554,7 +561,19 @@ File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
 Package pdftex.def Info: assets/GCL.jpg  used on input line 51.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [2]
+[2]
+Underfull \hbox (badness 1242) in paragraph at lines 68--78
+\OT1/cmr/m/n/14.4 to various environments and operational needs. Additionally, the
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 68--78
+\OT1/cmr/m/n/14.4 emphasizes the coordination of multiple agents towards a common
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
 Package pdftex.def Info: assets/WIT_logo.png  used on input line 78.
@@ -566,20 +585,20 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 78.
  [3]
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 109.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 106.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 109.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 106.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [4]
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 130.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 125.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 130.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 125.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [5]
 <assets/3d_model_complete.png, id=46, 513.92pt x 289.08pt>
@@ -589,26 +608,46 @@ Package pdftex.def Info: assets/3d_model_complete.png  used on input line 134.
 (pdftex.def)             Requested size: 308.35437pt x 173.44933pt.
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 152.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 146.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 152.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 146.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [6{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./assets/3d_model_complete.png>])
+ [6 <./assets/3d_model_complete.png>])
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 70.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 75.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 70.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 75.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [7]
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 \openout2 = `chapters/review_of_related_literature.aux'.
 
  (./chapters/review_of_related_literature.tex
 Chapter 2.
+
+Underfull \hbox (badness 1983) in paragraph at lines 3--7
+[]\OT1/cmr/m/n/14.4 The relevance of unmanned sea drones in the modern era is
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 3--7
+\OT1/cmr/m/n/14.4 as environmental monitoring, security, and underwater exploration.
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 24--39
+\OT1/cmr/m/n/14.4 Earlier innovators such as Silva et al. (2007) introduced the
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 24--39
+\OT1/cmr/m/n/14.4 the proposed SAS requires simpler hardware and boasts lower
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -637,6 +676,21 @@ File: assets/GCL.jpg Graphic file (type jpg)
 Package pdftex.def Info: assets/GCL.jpg  used on input line 46.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [9]
+Underfull \hbox (badness 1297) in paragraph at lines 47--56
+\OT1/cmr/m/n/14.4 simulations, and experiments, Luo et al. (2021) demonstrate
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 57--65
+\OT1/cmr/m/n/14.4 Some studies avoided relying on gps entirely, such as Chipka
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 57--65
+\OT1/cmr/m/n/14.4 achieved through a compass-based control law. This method
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
@@ -648,17 +702,31 @@ File: assets/GCL.jpg Graphic file (type jpg)
 Package pdftex.def Info: assets/GCL.jpg  used on input line 65.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [10]
+Underfull \hbox (badness 1092) in paragraph at lines 66--82
+\OT1/cmr/m/n/14.4 routine tasks, thus optimizing operational efficiency and easing
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 66--82
+\OT1/cmr/m/n/14.4 insights and advancements that could significantly enhance the
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 92.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 84.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 92.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 84.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [11]
+Underfull \hbox (badness 2478) in paragraph at lines 85--92
+\OT1/cmr/m/n/14.4 positioning and heading determination. Recent innovations, like
+ []
+
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
 Package pdftex.def Info: assets/WIT_logo.png  used on input line 106.
@@ -667,9 +735,9 @@ File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
 Package pdftex.def Info: assets/GCL.jpg  used on input line 106.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [12]
-Overfull \hbox (2.9906pt too wide) in paragraph at lines 107--108
-[]\OT1/cmr/m/n/14.4 10.1109/OCEANS.2007.4449358 An Au-tonomous Boat Based Syn-thetic
+[12]
+Underfull \hbox (badness 3199) in paragraph at lines 109--110
+[]\OT1/cmr/m/n/14.4 10.1088/1742-6596/1948/1/012106 Research on a course control
  []
 
 
@@ -704,7 +772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--127
 
 
 Underfull \hbox (badness 1577) in paragraph at lines 127--127
-\OT1/cmr/m/n/10 is highly re-liant on
+\OT1/cmr/m/n/10 is highly reliant on
  []
 
 
@@ -750,56 +818,93 @@ Underfull \hbox (badness 3735) in paragraph at lines 127--127
 )
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 71.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 76.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 71.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 76.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [13]
 \openout2 = `chapters/methodology.aux'.
 
  (./chapters/methodology.tex
 Chapter 3.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<assets/battery.png, id=74, 388.45125pt x 165.61874pt>
+File: assets/battery.png Graphic file (type png)
+<use assets/battery.png>
+Package pdftex.def Info: assets/battery.png  used on input line 11.
+(pdftex.def)             Requested size: 85.35826pt x 36.39326pt.
+<assets/converter.png, id=75, 646.415pt x 234.8775pt>
+File: assets/converter.png Graphic file (type png)
+<use assets/converter.png>
+Package pdftex.def Info: assets/converter.png  used on input line 12.
+(pdftex.def)             Requested size: 142.26378pt x 51.69112pt.
+<assets/esp-32.png, id=76, 513.92pt x 513.92pt>
+File: assets/esp-32.png Graphic file (type png)
+<use assets/esp-32.png>
+Package pdftex.def Info: assets/esp-32.png  used on input line 13.
+(pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
+<assets/magnetometer.png, id=77, 513.92pt x 513.92pt>
+File: assets/magnetometer.png Graphic file (type png)
+<use assets/magnetometer.png>
+Package pdftex.def Info: assets/magnetometer.png  used on input line 14.
+(pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
+<assets/gps_module.png, id=78, 259.97125pt x 194.7275pt>
+File: assets/gps_module.png Graphic file (type png)
+<use assets/gps_module.png>
+Package pdftex.def Info: assets/gps_module.png  used on input line 15.
+(pdftex.def)             Requested size: 85.35826pt x 63.93639pt.
+<assets/esc.png, id=79, 513.92pt x 513.92pt>
+File: assets/esc.png Graphic file (type png)
+<use assets/esc.png>
+Package pdftex.def Info: assets/esc.png  used on input line 16.
+(pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
+<assets/motor.png, id=80, 513.92pt x 513.92pt>
+File: assets/motor.png Graphic file (type png)
+<use assets/motor.png>
+Package pdftex.def Info: assets/motor.png  used on input line 17.
+(pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
+<assets/propellers.png, id=81, 493.845pt x 424.58624pt>
+File: assets/propellers.png Graphic file (type png)
+<use assets/propellers.png>
+Package pdftex.def Info: assets/propellers.png  used on input line 18.
+(pdftex.def)             Requested size: 85.35826pt x 73.38373pt.
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 11.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 35.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 11.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 35.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
- [14
+[14
 
 
 
 
-])
+ <./assets/battery.png> <./assets/converter.png> <./assets/esp-32.png> <./assets/magnetometer.png> <./assets/gps_module.png> <./assets/esc.png> <./assets/motor.png> <./assets/propellers.png>])
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 72.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 77.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 72.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 77.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [15] (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux) (./chapters/review_of_related_literature.aux) (./chapters/methodology.aux)) ) 
 Here is how much of TeX's memory you used:
- 15928 strings out of 477985
- 325589 string characters out of 5840059
+ 16060 strings out of 477985
+ 328192 string characters out of 5840059
  1865388 words of memory out of 5000000
- 35805 multiletter control sequences out of 15000+600000
+ 35929 multiletter control sequences out of 15000+600000
  518188 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,16n,89p,1231b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (20 pages, 228610 bytes).
+Output written on thesis.pdf (20 pages, 1402326 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 

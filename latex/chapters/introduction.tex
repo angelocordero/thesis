@@ -89,8 +89,8 @@ operations.
 \node [above = of throughput] {Throughput};
 \node [above = of output] {Output};
 
-\draw[->, very thick] (input.east) to node[] {} (throughput.west);
-\draw[->, very thick] (throughput.east) to node[] {} (output.west);
+\draw[ ->, line width = 1mm, black!70, black!70] (input.east) to node[] {} (throughput.west);
+\draw[ ->, line width = 1mm, black!70] (throughput.east) to node[] {} (output.west);
 
 \end{tikzpicture}
 \end{center}
@@ -106,12 +106,12 @@ data from gps and magnetometer.
 
 Continuous feedback loop adjusts the drone's path in real-time based on the latest sensor data, ensuring adaptability to various sea disturbances.
 
-\section{\bf \centering Objectives:}
+\section{Objectives}
 
-{\bf General Objectives:} \\
+General Objectives: \\
 \indent -- To design an ESP-32 based water surface drone with autonomous navigation capabilities using GPS and Magnetometer
 
-{\bf Specific Objectives:} \\
+Specific Objectives: \\
 \indent -- To construct an easy to use and maintainable water surface drone system \\
 \indent -- To test the accuracy of the sea surface drone to reach the target 
 
