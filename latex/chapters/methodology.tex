@@ -1,0 +1,48 @@
+\chapter{Methodology}
+
+This chapter shows the process of designing, testing and troubleshooting tools and equipment, construction and wiring procedure.
+
+Now that the design is in place, the purchase of material will follow, then the construction of the device and lastly the performance, 
+functionality, and reliability will be tested.
+
+\section{System Design}
+
+\pagebreak
+
+\section{Flowchart}
+\begin{figure}[ht]
+\centering \begin{tikzpicture}
+  [
+  RECT/.style={rectangle, rounded corners, draw=black!60, fill=white!0, very thick, minimum width = 20mm, minimum height = 10mm, align = center},
+  ROUNDEDRECT/.style={rounded rectangle, draw=black!60, fill=white!0, very thick, minimum width = 20mm, minimum height = 10mm},
+  DIAMOND/.style={diamond, draw=black!60, fill=white!0, very thick, minimum width = 10mm, minimum height = 10mm, align = center, aspect = 2, },
+  ]
+
+  \node[ROUNDEDRECT] (start) {Start};
+  \node[RECT] (switchOn) [below = of start] {Switch on};
+  \node[RECT] (esp32Boot) [right = of switchOn] {ESP-32 boots};
+  \node[RECT] (waitForUserInput) [right = of esp32Boot] {Waiting for user \\ input coordinates};
+  \node[RECT] (coordinatesSupplied) [below = of waitForUserInput] {Coordinates Supplied};
+  \node[RECT] (detectsLocationData) [left = of coordinatesSupplied] {GPS \& magnetometer \\ detects location data};
+  \node[RECT] (droneMoves) [left = of detectsLocationData] {Drone moves to \\ supplied coordinates};
+  \node[RECT] (confirmLoc) [below = of droneMoves] {GPS \& magnetometer \\ confirms location data};
+  \node[] (dummyNode) [below = of detectsLocationData] {};
+  \node[DIAMOND] (doesLocMatch) [below = of dummyNode] {Does drone location match \\ with supplied coordinates?};
+  \node[RECT] (terminate) [right = of doesLocMatch] {Drone terminated};
+  \node[ROUNDEDRECT] (end) [below = of terminate] {End};
+
+  \draw[->, very thick] (start.south) to node[] {} (switchOn.north);
+  \draw[->, very thick] (switchOn.east) to node[] {} (esp32Boot.west);
+  \draw[->, very thick] (esp32Boot.east) to node[] {} (waitForUserInput.west);
+  \draw[->, very thick] (waitForUserInput.south) to node[] {} (coordinatesSupplied.north);
+  \draw[->, very thick] (coordinatesSupplied.west) to node[] {} (detectsLocationData.east);
+  \draw[->, very thick] (detectsLocationData.west) to node[] {} (droneMoves.east);
+  \draw[->, very thick] (droneMoves.south) to node[] {} (confirmLoc.north);
+  \draw[->, very thick] (confirmLoc.south) to node[] {} (doesLocMatch.west);
+  \draw[->, very thick] (doesLocMatch.north) to node[left] {NO} (detectsLocationData.south);
+  \draw[->, very thick] (doesLocMatch.east) to node[above] {YES} (terminate.west);
+  \draw[->, very thick] (terminate.south) to node[] {} (end.north);
+\end{tikzpicture}
+\caption{Flowchart}
+\label{fig:Flowchart}
+\end{figure}

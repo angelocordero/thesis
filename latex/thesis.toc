@@ -1,56 +1,17 @@
 \babel@toc {english}{}\relax 
-\contentsline {paragraph}{}{1}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {paragraph}{}{1}{}%
-\contentsline {section}{\numberline {1.1}Background of the Study}{2}{}%
-\contentsline {paragraph}{}{2}{}%
-\contentsline {paragraph}{}{2}{}%
-\contentsline {paragraph}{}{2}{}%
-\contentsline {paragraph}{}{2}{}%
-\contentsline {paragraph}{}{3}{}%
-\contentsline {paragraph}{}{3}{}%
-\contentsline {paragraph}{}{3}{}%
+\contentsline {section}{\numberline {1.1}Background of the Study}{1}{}%
 \contentsline {section}{\numberline {1.2}Statement of the Problem}{3}{}%
-\contentsline {paragraph}{}{3}{}%
 \contentsline {section}{\numberline {1.3}Hypothesis}{3}{}%
-\contentsline {paragraph}{}{3}{}%
-\contentsline {section}{\numberline {1.4}Theoratical Framework}{4}{}%
-\contentsline {paragraph}{}{4}{}%
+\contentsline {section}{\numberline {1.4}Theoratical Framework}{3}{}%
 \contentsline {section}{\numberline {1.5}Conceptual Framework}{4}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {section}{\numberline {1.6}Significance of the Study}{5}{}%
-\contentsline {paragraph}{}{5}{}%
-\contentsline {section}{\numberline {1.7}Scope and Limitations of the Study}{6}{}%
-\contentsline {paragraph}{}{6}{}%
-\contentsline {paragraph}{}{6}{}%
-\contentsline {paragraph}{}{7}{}%
-\contentsline {section}{\numberline {1.8}Definition of Terms}{7}{}%
+\contentsline {section}{\numberline {1.6}\bf \centering Objectives:}{5}{}%
+\contentsline {section}{\numberline {1.7}Significance of the Study}{5}{}%
+\contentsline {section}{\numberline {1.8}Scope and Limitations of the Study}{5}{}%
+\contentsline {section}{\numberline {1.9}Definition of Terms}{6}{}%
 \contentsline {chapter}{\numberline {2}Review of Related Literature}{8}{}%
-\contentsline {paragraph}{}{8}{}%
-\contentsline {paragraph}{}{8}{}%
-\contentsline {paragraph}{}{8}{}%
 \contentsline {section}{\numberline {2.1}Prior Arts}{9}{}%
-\contentsline {paragraph}{}{9}{}%
-\contentsline {paragraph}{}{10}{}%
-\contentsline {paragraph}{}{10}{}%
-\contentsline {paragraph}{}{10}{}%
-\contentsline {paragraph}{}{11}{}%
 \contentsline {section}{\numberline {2.2}Synthesis}{12}{}%
-\contentsline {paragraph}{}{12}{}%
-\contentsline {paragraph}{}{12}{}%
-\contentsline {paragraph}{}{13}{}%
-\contentsline {paragraph}{}{13}{}%
-\contentsline {paragraph}{}{13}{}%
-\contentsline {paragraph}{}{13}{}%
-\contentsline {paragraph}{}{13}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{14}{}%
+\contentsline {section}{\numberline {3.1}System Design}{14}{}%
+\contentsline {section}{\numberline {3.2}Flowchart}{15}{}%
