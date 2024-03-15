@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.2)  16 MAR 2024 05:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.2)  16 MAR 2024 06:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -629,22 +629,22 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 75.
  (./chapters/review_of_related_literature.tex
 Chapter 2.
 
-Underfull \hbox (badness 1983) in paragraph at lines 3--7
+Underfull \hbox (badness 1983) in paragraph at lines 5--9
 []\OT1/cmr/m/n/14.4 The relevance of unmanned sea drones in the modern era is
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 3--7
+Underfull \hbox (badness 1348) in paragraph at lines 5--9
 \OT1/cmr/m/n/14.4 as environmental monitoring, security, and underwater exploration.
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 24--39
+Underfull \hbox (badness 1087) in paragraph at lines 26--41
 \OT1/cmr/m/n/14.4 Earlier innovators such as Silva et al. (2007) introduced the
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 24--39
+Underfull \hbox (badness 1320) in paragraph at lines 26--41
 \OT1/cmr/m/n/14.4 the proposed SAS requires simpler hardware and boasts lower
  []
 
@@ -653,11 +653,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 39.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 41.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 39.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 41.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [8
 
@@ -669,24 +669,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 46.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 48.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 46.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 48.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [9]
-Underfull \hbox (badness 1297) in paragraph at lines 47--56
+Underfull \hbox (badness 1297) in paragraph at lines 49--58
 \OT1/cmr/m/n/14.4 simulations, and experiments, Luo et al. (2021) demonstrate
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 57--65
+Underfull \hbox (badness 1448) in paragraph at lines 59--67
 \OT1/cmr/m/n/14.4 Some studies avoided relying on gps entirely, such as Chipka
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 57--65
+Underfull \hbox (badness 1546) in paragraph at lines 59--67
 \OT1/cmr/m/n/14.4 achieved through a compass-based control law. This method
  []
 
@@ -695,19 +695,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 65.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 67.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 65.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 67.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [10]
-Underfull \hbox (badness 1092) in paragraph at lines 66--82
+Underfull \hbox (badness 1092) in paragraph at lines 68--84
 \OT1/cmr/m/n/14.4 routine tasks, thus optimizing operational efficiency and easing
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 66--82
+Underfull \hbox (badness 1178) in paragraph at lines 68--84
 \OT1/cmr/m/n/14.4 insights and advancements that could significantly enhance the
  []
 
@@ -716,102 +716,102 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 84.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 86.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 84.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 86.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
  [11]
-Underfull \hbox (badness 2478) in paragraph at lines 85--92
+Underfull \hbox (badness 2478) in paragraph at lines 87--94
 \OT1/cmr/m/n/14.4 positioning and heading determination. Recent innovations, like
  []
 
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 106.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 108.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 106.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 108.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
 [12]
-Underfull \hbox (badness 3199) in paragraph at lines 109--110
+Underfull \hbox (badness 3199) in paragraph at lines 111--112
 []\OT1/cmr/m/n/14.4 10.1088/1742-6596/1948/1/012106 Research on a course control
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Prior
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Prior
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Prior
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Prior
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Prior
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Proponent's
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 127--127
+Underfull \hbox (badness 1577) in paragraph at lines 129--129
 \OT1/cmr/m/n/10 is highly reliant on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Uses PETG
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 \OT1/cmr/m/n/10 (Polyethy-lene
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 127--127
+Underfull \hbox (badness 1496) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 ESP-32 mi-cro-
  []
 
 
-Underfull \hbox (badness 5359) in paragraph at lines 127--127
+Underfull \hbox (badness 5359) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Utilizes an ESP-32
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []|\OT1/cmr/m/n/10 Water sur-face
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 127--127
+Underfull \hbox (badness 2726) in paragraph at lines 129--129
 \OT1/cmr/m/n/10 are de-signed to be
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 127--127
+Underfull \hbox (badness 5862) in paragraph at lines 129--129
 \OT1/cmr/m/n/10 placed. This al-
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 127--127
+Underfull \hbox (badness 3735) in paragraph at lines 129--129
 \OT1/cmr/m/n/10 lows for quick up-
  []
 
@@ -832,50 +832,50 @@ Chapter 3.
 <assets/battery.png, id=74, 388.45125pt x 165.61874pt>
 File: assets/battery.png Graphic file (type png)
 <use assets/battery.png>
-Package pdftex.def Info: assets/battery.png  used on input line 11.
+Package pdftex.def Info: assets/battery.png  used on input line 13.
 (pdftex.def)             Requested size: 85.35826pt x 36.39326pt.
 <assets/converter.png, id=75, 646.415pt x 234.8775pt>
 File: assets/converter.png Graphic file (type png)
 <use assets/converter.png>
-Package pdftex.def Info: assets/converter.png  used on input line 12.
+Package pdftex.def Info: assets/converter.png  used on input line 14.
 (pdftex.def)             Requested size: 142.26378pt x 51.69112pt.
 <assets/esp-32.png, id=76, 513.92pt x 513.92pt>
 File: assets/esp-32.png Graphic file (type png)
 <use assets/esp-32.png>
-Package pdftex.def Info: assets/esp-32.png  used on input line 13.
+Package pdftex.def Info: assets/esp-32.png  used on input line 15.
 (pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
 <assets/magnetometer.png, id=77, 513.92pt x 513.92pt>
 File: assets/magnetometer.png Graphic file (type png)
 <use assets/magnetometer.png>
-Package pdftex.def Info: assets/magnetometer.png  used on input line 14.
+Package pdftex.def Info: assets/magnetometer.png  used on input line 16.
 (pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
 <assets/gps_module.png, id=78, 259.97125pt x 194.7275pt>
 File: assets/gps_module.png Graphic file (type png)
 <use assets/gps_module.png>
-Package pdftex.def Info: assets/gps_module.png  used on input line 15.
+Package pdftex.def Info: assets/gps_module.png  used on input line 17.
 (pdftex.def)             Requested size: 85.35826pt x 63.93639pt.
 <assets/esc.png, id=79, 513.92pt x 513.92pt>
 File: assets/esc.png Graphic file (type png)
 <use assets/esc.png>
-Package pdftex.def Info: assets/esc.png  used on input line 16.
+Package pdftex.def Info: assets/esc.png  used on input line 18.
 (pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
 <assets/motor.png, id=80, 513.92pt x 513.92pt>
 File: assets/motor.png Graphic file (type png)
 <use assets/motor.png>
-Package pdftex.def Info: assets/motor.png  used on input line 17.
+Package pdftex.def Info: assets/motor.png  used on input line 19.
 (pdftex.def)             Requested size: 85.35826pt x 85.35774pt.
 <assets/propellers.png, id=81, 493.845pt x 424.58624pt>
 File: assets/propellers.png Graphic file (type png)
 <use assets/propellers.png>
-Package pdftex.def Info: assets/propellers.png  used on input line 18.
+Package pdftex.def Info: assets/propellers.png  used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 73.38373pt.
 File: assets/WIT_logo.png Graphic file (type png)
 <use assets/WIT_logo.png>
-Package pdftex.def Info: assets/WIT_logo.png  used on input line 35.
+Package pdftex.def Info: assets/WIT_logo.png  used on input line 37.
 (pdftex.def)             Requested size: 71.13188pt x 71.13196pt.
 File: assets/GCL.jpg Graphic file (type jpg)
 <use assets/GCL.jpg>
-Package pdftex.def Info: assets/GCL.jpg  used on input line 35.
+Package pdftex.def Info: assets/GCL.jpg  used on input line 37.
 (pdftex.def)             Requested size: 85.35826pt x 48.20515pt.
 [14
 
@@ -894,14 +894,14 @@ Package pdftex.def Info: assets/GCL.jpg  used on input line 77.
  [15] (./thesis.aux (./chapters/approval_sheet.aux) (./chapters/acknowledgement.aux) (./chapters/abstract.aux) (./chapters/introduction.aux) (./chapters/review_of_related_literature.aux) (./chapters/methodology.aux)) ) 
 Here is how much of TeX's memory you used:
  16060 strings out of 477985
- 328192 string characters out of 5840059
+ 328194 string characters out of 5840059
  1865388 words of memory out of 5000000
  35929 multiletter control sequences out of 15000+600000
  518188 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,16n,89p,1231b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (20 pages, 1402326 bytes).
+Output written on thesis.pdf (20 pages, 1402335 bytes).
 PDF statistics:
  121 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream

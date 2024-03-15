@@ -1,5 +1,7 @@
 \chapter{Methodology}
 
+\vspace{-1cm}
+
 This chapter shows the process of designing, testing and troubleshooting tools and equipment, construction and wiring procedure.
 
 Now that the design is in place, the purchase of material will follow, then the construction of the device and lastly the performance, 
@@ -10,12 +12,12 @@ functionality, and reliability will be tested.
 \centering \begin{tikzpicture}
   \node[anchor=north west] (battery) at (0, -0.3) {\includegraphics[width=3cm]{assets/battery.png}};
   \node[anchor=north west] (converter) at (5, 0) {\includegraphics[width=5cm]{assets/converter.png}};
-  \node[anchor=north west] (esp32) at (6, -3) {\includegraphics[width=3cm]{assets/esp-32.png}};
-  \node[anchor=north west] (magnetometer) at (12, 0) {\includegraphics[width=3cm]{assets/magnetometer.png}};
-  \node[anchor=north west] (gps) at (12, -5) {\includegraphics[width=3cm]{assets/gps_module.png}};
-  \node[anchor=north west] (esc) at (0, -3) {\includegraphics[width=3cm]{assets/esc.png}};
-  \node[anchor=north west] (motor) at (3, -7) {\includegraphics[width=3cm]{assets/motor.png}};
-  \node[anchor=north west] (propeller) at (9, -7.2) {\includegraphics[width=3cm]{assets/propellers.png}};
+  \node[anchor=north west] (esp32) at (6, -3.5) {\includegraphics[width=3cm]{assets/esp-32.png}};
+  \node[anchor=north west] (magnetometer) at (12, -1) {\includegraphics[width=3cm]{assets/magnetometer.png}};
+  \node[anchor=north west] (gps) at (12, -5.5) {\includegraphics[width=3cm]{assets/gps_module.png}};
+  \node[anchor=north west] (esc) at (0, -3.5) {\includegraphics[width=3cm]{assets/esc.png}};
+  \node[anchor=north west] (motor) at (3, -8) {\includegraphics[width=3cm]{assets/motor.png}};
+  \node[anchor=north west] (propeller) at (9, -8.2) {\includegraphics[width=3cm]{assets/propellers.png}};
 
   \draw[ ->, line width = 1mm, black!70] (battery) to node[] {} (converter);
   \draw[ ->, line width = 1mm, black!70] (battery) to node[] {} (esc);
