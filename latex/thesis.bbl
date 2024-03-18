@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{4449358}
+Sergio~Rui Silva, Sergio Cunha, Anibal Matos, and Nuno Cruz.
+\newblock An autonomous boat based synthetic aperture sonar.
+\newblock In {\em OCEANS 2007}, pages 1--7, 2007.
+
+\bibitem{NAD2015172}
+Đula Nađ, Nikola Mišković, and Filip Mandić.
+\newblock Navigation, guidance and control of an overactuated marine surface vehicle.
+\newblock {\em Annual Reviews in Control}, 40:172--181, 2015.
+
+\bibitem{Luo_2021}
+Zhigang Luo, Tonghui Qian, Xi~Ye, Jiahui Huang, and Linwen Yu.
+\newblock Research on a course control strategy for unmanned surface vessel.
+\newblock {\em Journal of Physics: Conference Series}, 1948(1):012106, jun 2021.
+
+\bibitem{DBLP:journals/corr/abs-1810-04243}
+Jordan~B. Chipka and Mark Campbell.
+\newblock Autonomous urban localization and navigation with limited information.
+\newblock {\em CoRR}, abs/1810.04243, 2018.
+
+\bibitem{BURMEISTER20141}
+Hans-Christoph Burmeister, Wilko Bruhn, Ørnulf Jan~Rødseth, and Thomas Porathe.
+\newblock Autonomous unmanned merchant vessel and its contribution towards the e-navigation implementation: The munin perspective.
+\newblock {\em International Journal of e-Navigation and Maritime Economy}, 1:1--13, 2014.
+
+\end{thebibliography}

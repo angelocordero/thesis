@@ -7,6 +7,8 @@
 \usepackage{tabularx}
 \usepackage{indentfirst}
 \usepackage{pifont}
+\usepackage{amsmath}
+\usepackage{mathtools}
 \usepackage[english]{babel}
 \usepackage[twoside]{fancyhdr}
 \usepackage[skip=10pt, indent=20pt]{parskip}
@@ -27,8 +29,24 @@ inner = 1.5in,
 \righthyphenmin=4
 \lefthyphenmin=4
 
+% My commands
 \newcommand{\cmark}{\centering \ding{51}}%
 \newcommand{\xmark}{\centering \ding{55}}%
+\newcommand{\cLoc}{$\boldsymbol{X_c}$ }
+\newcommand{\tLoc}{$\boldsymbol{X_t}$ }
+\newcommand{\cHeading}{$\boldsymbol{\theta_c}$ }
+\newcommand{\tHeading}{$\boldsymbol{\theta_t}$ }
+\newcommand{\decAngle}{$\boldsymbol{\delta}$ }
+\newcommand{\distance}{$\boldsymbol{\rho}$ }
+\newcommand{\bearing}{$\boldsymbol{\Delta}$ }
+\newcommand{\latDiff}{$\boldsymbol{\Delta_y}$ }
+\newcommand{\longDiff}{$\boldsymbol{\Delta_x}$ }
+
+
+
+
+
+\DeclareMathOperator{\atantwo}{atan_2}
 
 \renewcommand{\thispagestyle}[1]{} 
 \renewcommand{\headrulewidth}{0pt}
@@ -75,5 +93,10 @@ inner = 1.5in,
 \include{chapters/introduction}
 \include{chapters/review_of_related_literature}
 \include{chapters/methodology}
+
+\appendix
+\bibliographystyle{unsrt}
+\bibliography{thesis}
+
 
 \end{document}
