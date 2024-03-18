@@ -16,3 +16,8 @@
 \contentsline {section}{\numberline {3.1}System Design}{14}{}%
 \contentsline {section}{\numberline {3.2}Flowchart}{15}{}%
 \contentsline {section}{\numberline {3.3}Navigation algorithm}{16}{}%
+\contentsline {section}{\numberline {3.4}Construction Procedure}{20}{}%
+\contentsline {section}{\numberline {3.5}Testing and Evaluation}{20}{}%
+\contentsline {section}{\numberline {3.6}Sources of Data}{20}{}%
+\contentsline {section}{\numberline {3.7}Project Components and Materials}{20}{}%
+\contentsline {section}{\numberline {3.8}Instruments}{20}{}%

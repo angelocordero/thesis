@@ -32,19 +32,16 @@ inner = 1.5in,
 % My commands
 \newcommand{\cmark}{\centering \ding{51}}%
 \newcommand{\xmark}{\centering \ding{55}}%
-\newcommand{\cLoc}{$\boldsymbol{X_c}$ }
-\newcommand{\tLoc}{$\boldsymbol{X_t}$ }
-\newcommand{\cHeading}{$\boldsymbol{\theta_c}$ }
-\newcommand{\tHeading}{$\boldsymbol{\theta_t}$ }
-\newcommand{\decAngle}{$\boldsymbol{\delta}$ }
-\newcommand{\distance}{$\boldsymbol{\rho}$ }
-\newcommand{\bearing}{$\boldsymbol{\Delta}$ }
-\newcommand{\latDiff}{$\boldsymbol{\Delta_y}$ }
-\newcommand{\longDiff}{$\boldsymbol{\Delta_x}$ }
-
-
-
-
+\newcommand{\cLoc}{$\boldsymbol{X_c}$ } % current location
+\newcommand{\tLoc}{$\boldsymbol{X_t}$ } % target location
+\newcommand{\heading}{$\boldsymbol{\theta_c}$ } % current heading, angle where we are pointing
+\newcommand{\bearing}{$\boldsymbol{\theta_t}$ } % target bearing, angle from us to target
+\newcommand{\rBearing}{$\boldsymbol{\theta}$ } % relative bearing, difference between current heading and target bearing
+\newcommand{\decAngle}{$\boldsymbol{\delta}$ } % decliniation angle
+\newcommand{\distance}{$\boldsymbol{\Delta}$ } % pythagorean distance
+\newcommand{\latDiff}{$\boldsymbol{\phi}$ } 
+\newcommand{\longDiff}{$\boldsymbol{\lambda}$}
+\newcommand{\degrees}{$^\circ$}
 
 \DeclareMathOperator{\atantwo}{atan_2}
 

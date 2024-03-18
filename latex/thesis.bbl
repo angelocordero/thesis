@@ -25,4 +25,14 @@ Hans-Christoph Burmeister, Wilko Bruhn, Ørnulf Jan~Rødseth, and Thomas Porathe
 \newblock Autonomous unmanned merchant vessel and its contribution towards the e-navigation implementation: The munin perspective.
 \newblock {\em International Journal of e-Navigation and Maritime Economy}, 1:1--13, 2014.
 
+\bibitem{sourcecode}
+CSGNetwork.com.
+\newblock Length of a degree of latitude and longitude calculator.
+\newblock http://www.csgnetwork.com/degreelenllavcalc.html, 2011.
+
+\bibitem{forum}
+Brent and whuber.
+\newblock Understanding terms in length of degree formula.
+\newblock https://gis.stackexchange.com/questions/75528/understanding-terms-in-length-of-degree-formula, 2013.
+
 \end{thebibliography}

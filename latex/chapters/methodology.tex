@@ -123,7 +123,6 @@ functionality, and reliability will be tested.
   \label{fig:Flowchart}
 \end{figure}
 
-\pagebreak
 \section{Navigation algorithm}
 \begin{enumerate}
   \item  Get target location \tLoc from the user
@@ -133,7 +132,7 @@ functionality, and reliability will be tested.
         represent the angular distance east or west of the Prime Meridian, with positive values corresponding to western locations and negative values signifying eastern locations.
         \emph{Both Latitude and Longitude should be specified as decimal degrees.}
 
-  \item  Get current location \cLoc and current heading \cHeading from GPS and magnetometer modules
+  \item  Get current location \cLoc and current heading \heading from GPS and magnetometer modules
 
         \cLoc is acquired from the Global Positioning System (GPS) module. The module transmits NMEA sentences (refer to Section X.X todo for a detailed
         explanation) to the ESP32 microcontroller.  Of these sentences, the GPGLL sentence is specifically processed to extract the latitude, north/south (N/S) indicator, longitude,
@@ -141,26 +140,98 @@ functionality, and reliability will be tested.
         to decimal degrees for further calculations.  Subsequently, the N/S and E/W indicators are used to determine the correct sign (positive or negative) for the extracted
         latitude and longitude values.
 
-        In contrast, \cHeading, is calculated based on the \emph X and \emph Y values obtained from the magnetometer module.
-        This value represents the device's orientation relative to magnetic north. The calculation of \cHeading requires the declination angle \decAngle which is itself derived from the
-        longitude component of the current location, \cLoc. The declination correction accounts for the difference between magnetic north and true geographic north.  This correction is 
-        applied to the magnetic heading, denoted by \cHeading which is am azimuth value between 0 and 359 degrees, to obtain a value that represents the device's orientation relative to 
-        true north. A specific function is used during this correction process to ensure the resulting value remains within the 0-359 degree range and avoids overflow errors.
+        In contrast, \heading is calculated based on the \emph X and \emph Y values obtained from the magnetometer module.
+        This value represents the device's orientation relative to magnetic north. The calculation of \heading requires the declination angle \decAngle which is itself derived from the
+        longitude component of the current location, \cLoc. The declination correction accounts for the difference between magnetic north and true geographic north.  This correction is
+        applied to the magnetic heading which is an azimuth value between 0 and 359 degrees, to obtain a value that represents the device's orientation relative to
+        true north.
+        $$ \theta_c = \atantwo(y, x) + \frac{180}{\pi} + (\underbrace{0.015}_{\mathclap {\text{\hspace{+3.5cm} constant used to approximate angle of declination}}} * X_c^\lambda) + 1 $$
 
-          \large $$ \text{let } \lambda_c = \text{longitude component of } X_c $$
-          \large $$ \delta = (\underbrace{0.015}_{\mathclap {\text{constant used to approximate angle of declination}}} * \lambda_c) + 1 $$
-          \large $$ \theta_c = \atantwo(y, x) + \frac{180}{\pi} + \delta $$
+        A specific function is then used to ensure the resulting value remains within the 0 to 359 degree range and avoids overflow errors.
 
 
-  \item Get the difference between between longitude and latitude components of \cLoc and \tLoc
+  \item Get the difference between between the longitude \longDiff and latitude \latDiff components of \cLoc and \tLoc
+        \begin{align*}
+          \lambda & = X_c^\lambda - X_t^\lambda \\
+          \phi    & = X_c^\phi - X_t^\phi
+        \end{align*}
 
-        \small   $$ \text{let } \lambda_c = \text{longitude component of } X_c $$
-        \small   $$ \text{let } \lambda_t = \text{longitude component of } X_t $$
-        \small   $$ \text{let } \phi_c = \text{latitude component of } X_c $$
-        \small   $$ \text{let } \phi_t = \text{latitude component of } X_t $$
+  \item Get distance \distance between \cLoc and \tLoc
 
-        \large  $$ \lambda = \lambda_c - \lambda_t $$
-        \large $$ \phi = \phi_c - \phi_t $$
+        Due to the Earth's oblateness, getting the distance between two geographic coordinates presents complexities. The conversion factor required for accurate
+        transformation varies depending on the specific location on the Earth's surface. To address this, we will leverage an approximate formula used in the source
+        code of CSGNetwork.com's length of a degree of latitude and longitude calculator\cite{sourcecode}. This formula was further explored in an answer in a forum post in the
+        Geographic Information Systems Stack Exchange website\cite{forum} indicating that it was derived from the WGS84 ellipsoidal Earth model.
+
+        $$ \phi_m = \frac{X_c^\phi + X_t^\phi}{2} $$
+        \begin{align*}
+          \phi_d = \text{ meters per degree in } \phi       & = 111132.92 \; - \; 559.82\cos2{\phi_m}       \\ & \quad +  \; 1.175cos4\phi_m \; - \; 0.0023\cos6\phi_m \\ \\
+          \lambda_d = \text{ meters per degree in } \lambda & = 111412.84\cos\phi_m \; - \; 93.5\cos3\phi_m \\ & \quad + \; 0.118\cos5\phi_m
+        \end{align*}
+
+        To find the distance in meters, we will apply the Pythagorean Theorem.
+
+        $$ \Delta = \sqrt{{(\phi_d)}^2 + {(\lambda_d)}^2} $$
+
+  \item Get target bearing \bearing from \cLoc to \tLoc
+
+        Assuming that the \cLoc and \tLoc is in a two-dimensional Cartesian plane centered at \cLoc, we determine \bearing using the \emph{atan} function and
+        quadrant-specific adjustments. The \emph{arctangent}, expressed as $\arctan(\frac{\lambda}{\phi})$ calculates the fundamental inclination angle. To account for the
+        varying quadrants and to ensure an accurate directional representation from the origin, corrective terms of 180\degrees or 360\degrees are incorporated based
+        on the signs of \longDiff and \latDiff. This simple approach offers a robust and computationally efficient method for calculating azimuths within the assumed two-dimensional
+        spatial framework.
+
+        $$ \theta_t = \begin{cases}
+            \arctan(\frac{\lambda}{\phi})       & \text{if } \lambda > 0 \text{ and } \phi > 0 \rightarrow \text{quadrant 1} \\
+            \arctan(\frac{\lambda}{\phi}) + 180 & \text{if } \lambda > 0 \text{ and } \phi < 0 \rightarrow \text{quadrant 2} \\
+            \arctan(\frac{\lambda}{\phi}) + 180 & \text{if } \lambda < 0 \text{ and } \phi < 0 \rightarrow \text{quadrant 3} \\
+            \arctan(\frac{\lambda}{\phi}) + 360 & \text{if } \lambda < 0 \text{ and } \phi > 0 \rightarrow \text{quadrant 4} \\
+          \end{cases} $$
+
+  \item Calculate relative bearing \rBearing between \bearing and \heading
+
+        The raw relative bearing $\boldsymbol{\delta}$ is subsequently calculated by subtracting the measured heading \heading from the target bearing \bearing.
+
+        $$ \delta = \theta_c - \theta_t $$
+
+        To constrain \rBearing within the range of -180\degrees \space to 180\degrees, a correction step is implemented to the raw relative bearing. If the absolute value of $\delta$ exceeds
+        180\degrees, the absolute value $\delta$ is subtracted from 360\degrees. This ensures that \rBearing remains as close to zero as possible.
+        A minimal relative bearing value translates to the smallest required turning angle.
+
+        $$ \theta = \begin{cases}
+            \delta         & \text{if } |\delta| \leq 180 \\
+            360 - |\delta| & \text{if } |\delta| > 180
+          \end{cases} $$
+
+  \item Differential thrust for yaw control
   
-  \item Get bearing \bearing to target
+        To achieve yaw (turn) maneuvers, the relative bearing, \rBearing, dictates the power distribution between the designated motors. Positive \rBearing signifies a turn
+        towards the port side (left), while negative \rBearing corresponds to a starboard (right) turn.
+
+        To generate yaw torque, one motor experiences a reduction in thrust while the opposing motor stays at the maximum thrust. For a port turn, the port motor's thrust is reduced
+        and the starboard motor's thrust stays at the maximum. Conversely, a starboard turn necessitates the opposite configuration.
+
+        To minimize the duration of reduced thrust on a single motor and reduce transient effects, a damping value function is implemented. When the relative bearing is within a predefined
+        tolerance zone of 5\degrees$\pm$, both motors operate at full capacity, effectively maintaining straight travel.
+
+        For relative bearings exceeding the tolerance thresholds, the thrust of the appropriate motor is reduced linearly. In a scenario requiring a full port turn, the port motor's thrust 
+        would be linearly reduced to zero while the starboard motor maintains maximum thrust. Conversely, a full starboard turn would involve linearly scaling the starboard motor's thrust to 
+        zero while maintaining maximum thrust on the port motor.
+
+        When the drone's distance to the target, designated by \distance, is within the \emph{uncertainty threshold}, both of the motors would provide no thrust. If \distance has increased to 
+        above the \emph{uncertainty threshold} due to drift, then the algorithm will loop back up again and try to correct the drift.
 \end{enumerate}
+
+When the distance to the target, \distance, falls within the \emph{uncertainty threshold}, both motors are commanded to produce zero thrust as the target is sufficiently close. However,
+if the distance exceeds the \emph{uncertainty threshold} due to factors such as environment disturbance or drift, the control algorithm iterates back to the beginning and initiates corrective
+actions to re-establish accurate positioning relative to the target.
+
+\section{Construction Procedure}
+
+\section{Testing and Evaluation}
+
+\section{Sources of Data}
+
+\section{Project Components and Materials}
+
+\section{Instruments}
