@@ -194,8 +194,8 @@ functionality, and reliability will be tested.
 
         $$ \delta = \theta_c - \theta_t $$
 
-        To constrain \rBearing within the range of -180\degrees \space to 180\degrees, a correction step is implemented to the raw relative bearing. If the absolute value of $\delta$ exceeds
-        180\degrees, the absolute value $\delta$ is subtracted from 360\degrees. This ensures that \rBearing remains as close to zero as possible.
+        To constrain \rBearing within the range of -180\degrees \space to 180\degrees, a correction step is implemented to the raw relative bearing. If the absolute value of \rawBearing exceeds
+        180\degrees, the absolute value \rawBearing is subtracted from 360\degrees. This ensures that \rBearing remains as close to zero as possible.
         A minimal relative bearing value translates to the smallest required turning angle.
 
         $$ \theta = \begin{cases}

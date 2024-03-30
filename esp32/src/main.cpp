@@ -1,60 +1,15 @@
-#include <Arduino.h>
-#include <QMC5883LCompass.h>
-#include <SoftwareSerial.h>
 #include <cstdlib>
 #include <string.h>
 
-#define MAGNETOMETER_SDA_PIN 21
-#define MAGNETOMETER_SCL_PIN 22
+#include "constants.h"
+#include "functions.h"
 
-#define GPS_RX_PIN 17
-#define GPS_TX_PIN 5
+Coordinates currentLoc;
+Coordinates targetLoc;
+float bearing = 999;
 
-#define ESC_LEFT_PIN 18
-#define ESC_RIGHT_PIN 19
-
-QMC5883LCompass compass;
-SoftwareSerial gps;
-
-class Coordinates
+void getCurrentLoc()
 {
-public:
-  Coordinates(float inputLat, float inputLong)
-  {
-    longitude = inputLong;
-    latitude = inputLat;
-  }
-
-  float longitude = 999;
-  float latitude = 999;
-
-  bool isValid()
-  {
-    return (abs(latitude) <= 180.0 || abs(longitude) <= 180.0);
-  }
-};
-
-Coordinates coordinates;
-Coordinates target;
-float heading = 999;
-
-float parseLatLong(String input)
-{
-  int decimalIndex = input.indexOf('.');
-  if (decimalIndex == -1)
-  {
-    return input.toFloat();
-  }
-
-  String degreeString = input.substring(0, decimalIndex - 2);
-  String minuteString = input.substring(decimalIndex - 2, input.length() - degreeString.length());
-
-  return degreeString.toFloat() + (minuteString.toFloat() / 60.0);
-}
-
-void getGPSData()
-{
-  // todo test if working
   while (gps.available())
   {
     gps.read();
@@ -103,59 +58,92 @@ void getGPSData()
         nmeaSentence = nmeaSentence.substring(delimiterIndex + 1);
       }
       if (!validity)
-        return; // exit early if invalidz
+        return; // exit early if invalid
 
-      coordinates = Coordinates(newLat, newLong);
+      currentLoc = Coordinates(newLat, newLong);
     }
   }
 }
 
-void getMagnetometerData()
+void getRelativeBearing()
 {
-  int x, y;
+  int x, y, z;
 
   compass.read();
 
   x = compass.getX();
   y = compass.getY();
+  z = compass.getZ();
 
-  heading = atan2(y, x) + 180 / PI;
+  float temp[3];
 
-  if (!coordinates.isValid())
-    return;
+  temp[0] = (x - CALIBRATION_B[0]);
+  temp[1] = (y - CALIBRATION_B[1]);
+  temp[2] = (z - CALIBRATION_B[2]);
 
-  float declinationAngle = (0.015 * coordinates.longitude) + 1;
+  x = CALIBRATION_A[0][0] * temp[0] + CALIBRATION_A[0][1] * temp[1] + CALIBRATION_A[0][2] * temp[2];
+  y = CALIBRATION_A[1][0] * temp[0] + CALIBRATION_A[1][1] * temp[1] + CALIBRATION_A[1][2] * temp[2];
 
-  heading += declinationAngle;
-}
+  float heading = -atan2(x, y) * 180 / PI;
 
-void getBearingToTarget()
-{
-  float x = coordinates.longitude - target.longitude;
-  float y = coordinates.latitude - target.latitude;
+  if (heading < 0)
+  {
+    heading += 360;
+  }
 
-  // todo calculate liwat
-  // float theta
-}
+  float bearingToTarget = getBearingToTarget(currentLoc, targetLoc);
 
-float getTargetDistance()
-{
-  return sqrt(sq(coordinates.latitude - target.latitude) + sq(coordinates.longitude - target.longitude));
+  float delta = heading - bearingToTarget;
+
+  float bearing = delta;
+
+  if (abs(delta) > 180)
+  {
+    bearing = abs(delta) - 360;
+  }
 }
 
 void navigate()
 {
   // return early and do not start motors if current and target coordinates are invalid
-  if (!coordinates.isValid() || !target.isValid())
+  if (!currentLoc.isValid() || !targetLoc.isValid() || bearing > 180 || bearing < -180)
     return;
 
-  // todo
+  float throttle = map(bearing, 10, 180, MAX_ALLOWABLE_THROTTLE, MIN_PWM);
+
+  if (abs(bearing) <= BEARING_TOLERANCE_THRESHOLD) // go straignt
+  {
+    portMotor.writeMicroseconds(MAX_PWM);
+    starboardMotor.writeMicroseconds(MAX_PWM);
+  }
+  else if (bearing > BEARING_TOLERANCE_THRESHOLD)
+  {
+
+    portMotor.writeMicroseconds(throttle);
+    starboardMotor.writeMicroseconds(MAX_ALLOWABLE_THROTTLE);
+  }
+  else if (bearing < (0 - BEARING_TOLERANCE_THRESHOLD))
+  {
+    portMotor.writeMicroseconds(MAX_ALLOWABLE_THROTTLE);
+    starboardMotor.writeMicroseconds(throttle);
+  }
+  else
+  {
+    portMotor.writeMicroseconds(MIN_PWM);
+    starboardMotor.writeMicroseconds(MIN_PWM);
+  }
 }
 
 void setup()
 {
-  Serial.begin(9600);
-  Wire.begin(MAGNETOMETER_SDA_PIN, MAGNETOMETER_SCL_PIN);
+  Serial.begin(9600); //! remove on final deployment to save(?) resources
+  compass.init();
+
+  portMotor.attach(PORT_MOTOR_PIN, MIN_PWM, MAX_PWM);
+  starboardMotor.attach(STARBOARD_MOTOR_PIN, MIN_PWM, MAX_PWM);
+  portMotor.writeMicroseconds(MIN_PWM);
+  starboardMotor.writeMicroseconds(MIN_PWM);
+  delay(3000);
 
   // todo assign tasks
 }
