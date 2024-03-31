@@ -74,8 +74,8 @@ void setup()
   );
 
   xTaskCreatePinnedToCore(
-      magnetometerTask,
-      "Magnetometer task",
+      debugTask,
+      "Debug task",
       3000,
       NULL,
       1,
