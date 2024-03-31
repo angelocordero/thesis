@@ -5,6 +5,11 @@
 #ifndef CONSTANTS_h
 #define CONSTANTS_h
 
+// * ===== GLOBALS =====
+//todo: fix later
+
+
+
 // * ===== PINOUTS =====
 const int MAGNETOMETER_SDA_PIN = 21;
 const int MAGNETOMETER_SCL_PIN = 22;
@@ -61,6 +66,10 @@ public:
   bool isValid()
   {
     return (abs(latitude) <= 180.0 || abs(longitude) <= 180.0);
+  }
+
+  String toString(){
+    return "Coordinates: (Longitude: " + String(longitude, 3) + ", Latitude: " + String(latitude, 3) + ")" ;
   }
 };
 
