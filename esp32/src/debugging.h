@@ -1,5 +1,3 @@
-//! try lang
-
 #include <WiFi.h>
 #include <WiFiUdp.h>
 #include "constants.h"
@@ -9,29 +7,29 @@ WiFiUDP udp;
 String ssid = "";
 String password = "";
 
-unsigned long long startupTime;
-
-void sendDebugData(Coordinates current, Coordinates target, float heading, float bearingToTarget, float relativeBearing)
+void sendDebugData()
 {
   unsigned long long currentTime = millis();
   double millisSinceStartup = (double)(currentTime - startupTime);
 
   IPAddress laptopIP = WiFi.gatewayIP();
 
-  String message = "[" 
-  + String(millisSinceStartup) 
-  + ", Current Loc: " 
-  + current.toString() 
-  + ", TargetLoc " 
-  + target.toString() 
-  + ", Heading: " 
-  + String(heading, 3) 
-  + ", Bearing to target: " 
-  + String(bearingToTarget, 3) 
-  + ", Relative Bearing: " 
-  + String(relativeBearing, 3) 
-  + "]";
-
+  String message = "["
+                   + String(millisSinceStartup)
+                   + ", Current Loc: "
+                   + currentLoc.toString()
+                   + ", Target Loc "
+                   + targetLoc.toString()
+                   + ", Heading: "
+                   + String(heading)
+                   + ", Bearing to target: "
+                   + String(bearingToTarget)
+                   + ", Relative Bearing: "
+                   + String(relativeBearing)
+                   + ", Distance to target: "
+                   + String(distanceToTarget)
+                   + "]";
+                   
   udp.beginPacket(laptopIP, 5000);
   udp.print(message);
   udp.endPacket();

@@ -6,12 +6,12 @@
 #include "debugging.h"
 #include "globals.h"
 
-
 void motorsTask(void *parameters)
 {
   for (;;)
   {
     navigate();
+     vTaskDelay(100 / portTICK_PERIOD_MS);
   }
 }
 
@@ -20,28 +20,25 @@ void gpsTask(void *parameters)
   for (;;)
   {
     getCurrentLoc();
-  }
-}
-
-void magnetometerTask(void *parameters)
-{
-  for (;;)
-  {
-    getRelativeBearing();
+     vTaskDelay(100 / portTICK_PERIOD_MS);
   }
 }
 
 void debugTask(void *parameters){
   for(;;){
-    sendDebugData(currentLoc, targetLoc, heading, bearingToTarget, relativeBearing);
+    sendDebugData();
+     vTaskDelay(100 / portTICK_PERIOD_MS);
   }
 }
 
 void setup()
 {
-  // Serial.begin(9600); //! remove on final deployment to save(?) resources
+  // Serial.begin(115200); //! remove on final deployment to save(?) resources
   startupTime = millis();
   compass.init();
+  gps.begin(9600);
+  gps.enableRx(true);
+  gps.enableTx(false);
 
   portMotor.attach(PORT_MOTOR_PIN, MIN_PWM, MAX_PWM);
   starboardMotor.attach(STARBOARD_MOTOR_PIN, MIN_PWM, MAX_PWM);
@@ -56,16 +53,6 @@ void setup()
   xTaskCreatePinnedToCore(
       gpsTask,
       "GPS Task",
-      3000,
-      NULL,
-      1,
-      NULL,
-      secondaryCore //
-  );
-
-  xTaskCreatePinnedToCore(
-      magnetometerTask,
-      "Magnetometer task",
       3000,
       NULL,
       1,
@@ -92,6 +79,11 @@ void setup()
       NULL,
       1,
       NULL,
-      mainCore //
+      secondaryCore //
   );
+}
+
+void loop() {
+  getRelativeBearing();
+  delay(100);
 }
