@@ -148,7 +148,7 @@ void getRelativeBearing()
 
   getBearingToTarget();
 
-  float delta = tempHeading - bearingToTarget;
+  float delta = heading - bearingToTarget;
 
   if (abs(delta) > 180)
   {
