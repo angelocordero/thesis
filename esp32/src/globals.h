@@ -11,6 +11,4 @@ float bearingToTarget = 999;
 float relativeBearing = 0;
 float distanceToTarget = 0;
 
-unsigned long long startupTime;
-
 #endif

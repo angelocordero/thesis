@@ -91,7 +91,7 @@ void getCurrentLoc()
         case 2: // longitude
           newLong = parseLatLong(token);
           break;
-        case 3: // S/W indicator
+        case 3: // E/W indicator
           if (token == "W")
           {
             newLong *= -1.0;

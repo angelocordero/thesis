@@ -26,7 +26,8 @@ void gpsTask(void *parameters)
 
 void debugTask(void *parameters){
   for(;;){
-    sendDebugData();
+    sendDebugDataThroughWifi();
+    sendDebugDataToSDCard();
      vTaskDelay(100 / portTICK_PERIOD_MS);
   }
 }
@@ -34,7 +35,6 @@ void debugTask(void *parameters){
 void setup()
 {
   // Serial.begin(115200); //! remove on final deployment to save(?) resources
-  startupTime = millis();
   compass.init();
   gps.begin(9600);
   gps.enableRx(true);
@@ -46,6 +46,8 @@ void setup()
   starboardMotor.writeMicroseconds(MIN_PWM);
 
   connectToWifi();
+
+  initSDCard();
 
   int mainCore = CONFIG_ARDUINO_RUNNING_CORE;
   int secondaryCore = mainCore == 0 ? 1 : 0;
@@ -60,16 +62,6 @@ void setup()
       secondaryCore //
   );
 
-  xTaskCreatePinnedToCore(
-      debugTask,
-      "Debug task",
-      3000,
-      NULL,
-      1,
-      NULL,
-      mainCore //
-  );
-
   delay(3000);
 
   xTaskCreatePinnedToCore(
@@ -81,6 +73,17 @@ void setup()
       NULL,
       secondaryCore //
   );
+
+    xTaskCreatePinnedToCore(
+      debugTask,
+      "Debug task",
+      3000,
+      NULL,
+      1,
+      NULL,
+      mainCore //
+  );
+
 }
 
 void loop() {

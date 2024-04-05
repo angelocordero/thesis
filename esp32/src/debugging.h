@@ -1,5 +1,7 @@
 #include <WiFi.h>
 #include <WiFiUdp.h>
+#include <SPI.h>
+#include <SD.h>
 #include "constants.h"
 
 WiFiUDP udp;
@@ -7,15 +9,16 @@ WiFiUDP udp;
 String ssid = "";
 String password = "";
 
-void sendDebugData()
+File dataFile;
+
+void sendDebugDataThroughWifi()
 {
   unsigned long long currentTime = millis();
-  double millisSinceStartup = (double)(currentTime - startupTime);
 
   IPAddress laptopIP = WiFi.gatewayIP();
 
   String message = "["
-                   + String(millisSinceStartup)
+                   + String(millis())
                    + ", Current Loc: "
                    + currentLoc.toString()
                    + ", Target Loc "
@@ -43,4 +46,26 @@ void connectToWifi()
   WiFi.mode(WIFI_OFF);
 
   WiFi.begin(ssid, password);
+}
+
+void initSDCard() {
+  const int CS = 13;
+  const int MOSI = 27;
+  const int MISO = 26;
+  const int CLK = 25;
+
+  SPI.begin(CLK, MISO, MOSI, CS);
+
+  SD.begin(CS);
+
+  dataFile = SD.open("data.txt", FILE_WRITE);
+}
+
+void sendDebugDataToSDCard () {
+
+if(!currentLoc.isValid() || distanceToTarget < POSITIONAL_UNCERTAINTY_THRESHOLD) return;
+
+String data =  String(millis()) + "," + String(currentLoc.latitude) + "," + String(currentLoc.longitude) ;
+
+dataFile.println(data);
 }
