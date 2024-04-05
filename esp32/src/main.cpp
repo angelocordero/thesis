@@ -26,14 +26,15 @@ void gpsTask(void *parameters)
 
 void debugTask(void *parameters){
   for(;;){
+    sendDataThroughSerialPort();
     sendDebugDataToSDCard();
-     vTaskDelay(100 / portTICK_PERIOD_MS);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
   }
 }
 
 void setup()
 {
-  // Serial.begin(115200); //! remove on final deployment to save(?) resources
+  Serial.begin(115200); //! remove on final deployment to save(?) resources
   compass.init();
   gps.begin(9600);
   gps.enableRx(true);

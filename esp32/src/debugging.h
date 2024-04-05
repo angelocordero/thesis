@@ -4,6 +4,27 @@
 
 File dataFile;
 
+void sendDataThroughSerialPort() {
+ String message = "["
+                   + String(millis())
+                   + ", Current Loc: "
+                   + currentLoc.toString()
+                   + ", Target Loc "
+                   + targetLoc.toString()
+                   + ", Heading: "
+                   + String(heading)
+                   + ", Bearing to target: "
+                   + String(bearingToTarget)
+                   + ", Relative Bearing: "
+                   + String(relativeBearing)
+                   + ", Distance to target: "
+                   + String(distanceToTarget)
+                   + "]";
+
+Serial.println(message);
+
+}
+
 void initSDCard() {
   const int CS = 13;
   const int MOSI = 27;
