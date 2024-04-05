@@ -42,7 +42,7 @@ if(!currentLoc.isValid() || distanceToTarget < POSITIONAL_UNCERTAINTY_THRESHOLD)
 
 File dataFile = SD.open("/data.csv", FILE_APPEND);
 
-String data =  String(millis()) + "," + String(currentLoc.latitude) + "," + String(currentLoc.longitude) + ",";
+String data =  String(millis()) + "," + String(currentLoc.latitude, 10U) + "," + String(currentLoc.longitude, 10U) + ",";
 
 dataFile.println(data);
 

@@ -32,12 +32,12 @@ const int MAGNETIC_DECLINATION = -2.06;
 // calibration data for magnetometer
 // see calibration process
 const float CALIBRATION_A[3][3]{
-  { 0.041280, -0.004838, 0.001088 },
-  { -0.004838, 0.038713, 0.001871 },
-  { 0.001088, 0.001871, 0.049086}
+  { 0.041304, -0.004433, 0.000978 },
+  { -0.004433, 0.038935, 0.001932 },
+  { 0.000978, 0.001932, 0.050078}
 };
 
-const float CALIBRATION_B[3]{ -1183.316374, -587.382114, -1964.248985 };
+const float CALIBRATION_B[3]{ -1483.237651, -737.987926, -2112.775318 };
 
 // * ===== MOTOR AND ESC =====
 Servo portMotor;
@@ -73,7 +73,7 @@ public:
 
   String toString()
   {
-    return "Coordinates: (Longitude: " + String(longitude, 3) + ", Latitude: " + String(latitude, 3) + ")";
+    return "Coordinates: (Longitude: " + String(longitude, 10U) + ", Latitude: " + String(latitude, 10U) + ")";
   }
 };
 
