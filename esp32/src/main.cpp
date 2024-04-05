@@ -28,7 +28,7 @@ void debugTask(void *parameters){
   for(;;){
     sendDataThroughSerialPort();
     sendDebugDataToSDCard();
-    vTaskDelay(100 / portTICK_PERIOD_MS);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
   }
 }
 

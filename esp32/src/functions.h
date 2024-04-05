@@ -116,14 +116,13 @@ void getCurrentLoc()
 
 void getRelativeBearing()
 {
-  if (!currentLoc.isValid())
-    return;
+  int x, y, z;
 
   compass.read();
 
-  int x = compass.getX();
-  int y = compass.getY();
-  int z = compass.getZ();
+  x = compass.getX();
+  y = compass.getY();
+  z = compass.getZ();
 
   float temp[3];
 
@@ -136,9 +135,7 @@ void getRelativeBearing()
 
   float tempHeading = -atan2(x, y) * 180 / PI;
 
-  float declinationAngle = (0.015 * currentLoc.longitude) + 1;
-
-  tempHeading = tempHeading + declinationAngle;
+  tempHeading = tempHeading + MAGNETIC_DECLINATION;
 
   if (tempHeading < 0)
   {

@@ -27,14 +27,17 @@ const int BEARING_TOLERANCE_THRESHOLD = 5; //! value to account for magnetometer
 
 const int CRITICAL_TURNING_THRESHOLD = 150; //! if relative bearing is > critical turning threshold, turn off one motor to maximize turnign speed
 
+const int MAGNETIC_DECLINATION = -2.06;
+
 // calibration data for magnetometer
 // see calibration process
 const float CALIBRATION_A[3][3]{
-    {0.032112, 0.001829, -0.000664},
-    {0.001829, 0.029941, 0.001147},
-    {-0.000664, 0.001147, 0.036735}};
+  { 0.041280, -0.004838, 0.001088 },
+  { -0.004838, 0.038713, 0.001871 },
+  { 0.001088, 0.001871, 0.049086}
+};
 
-const float CALIBRATION_B[3]{1467.935548, -1226.765475, -1422.699791};
+const float CALIBRATION_B[3]{ -1183.316374, -587.382114, -1964.248985 };
 
 // * ===== MOTOR AND ESC =====
 Servo portMotor;

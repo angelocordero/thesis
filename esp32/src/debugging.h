@@ -29,13 +29,13 @@ void initSDCard() {
   const int CS = 13;
   const int MOSI = 27;
   const int MISO = 26;
-  const int CLK = 25;
+  const int SCK = 25;
 
-  SPI.begin(CLK, MISO, MOSI, CS);
+  SPI.begin(SCK, MISO, MOSI, CS);
 
   SD.begin(CS);
 
-  dataFile = SD.open("data.csv", FILE_WRITE);
+  dataFile = SD.open("/data.csv", FILE_WRITE);
 }
 
 void sendDebugDataToSDCard () {
