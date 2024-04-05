@@ -26,7 +26,6 @@ void gpsTask(void *parameters)
 
 void debugTask(void *parameters){
   for(;;){
-    sendDebugDataThroughWifi();
     sendDebugDataToSDCard();
      vTaskDelay(100 / portTICK_PERIOD_MS);
   }
@@ -44,8 +43,6 @@ void setup()
   starboardMotor.attach(STARBOARD_MOTOR_PIN, MIN_PWM, MAX_PWM);
   portMotor.writeMicroseconds(MIN_PWM);
   starboardMotor.writeMicroseconds(MIN_PWM);
-
-  connectToWifi();
 
   initSDCard();
 
