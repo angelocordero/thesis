@@ -42,23 +42,37 @@ void getBearingToTarget()
   float lon = currentLoc.longitude - targetLoc.longitude;
   float lat = currentLoc.latitude - targetLoc.latitude;
 
+  if(lon == 0 && lat < 0) // 0 degrees
+  {
+    bearingToTarget = 0;
+    return;
+  } else if(lon < 0 && lat == 0 ) // 90 degrees
+  {
+    bearingToTarget = 90;
+    return;
+  } else if (lon == 0 && lat > 0) // 180 degrees
+  {
+    bearingToTarget = 180;
+    return;
+  }else if (lon > 0 && lat == 0) // 270 degrees
+  {
+    bearingToTarget = 270;
+    return;
+  }
+
   float bearing = atan(lon / lat) * 180 / PI;
 
-  if (lon > 0 && lat < 0) // quadrant 2
+  if (lon < 0 && lat < 0) // quadrant 1
   {
-    bearingToTarget = bearing + 180;
+    bearingToTarget = bearing;
   }
-  else if (lon < 0 && lat < 0) // quadrant 3
-  {
-    bearingToTarget = bearing + 180;
-  }
-  else if (lon < 0 && lat > 0) // quadrant 4
+  else if (lon > 0 && lat < 0) // quadrant 4
   {
     bearingToTarget = bearing + 360;
   }
-  else
+  else // quadrant 2 and 3
   {
-    bearingToTarget = bearing; // quadrant 1
+    bearingToTarget = bearing + 180;
   }
 }
 
