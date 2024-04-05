@@ -2,8 +2,6 @@
 #include <SD.h>
 #include "constants.h"
 
-File dataFile;
-
 void sendDataThroughSerialPort() {
  String message = "["
                    + String(millis())
@@ -35,14 +33,18 @@ void initSDCard() {
 
   SD.begin(CS);
 
-  dataFile = SD.open("/data.csv", FILE_WRITE);
+  
 }
 
 void sendDebugDataToSDCard () {
 
 if(!currentLoc.isValid() || distanceToTarget < POSITIONAL_UNCERTAINTY_THRESHOLD) return;
 
+File dataFile = SD.open("/data.csv", FILE_APPEND);
+
 String data =  String(millis()) + "," + String(currentLoc.latitude) + "," + String(currentLoc.longitude) + ",";
 
 dataFile.println(data);
+
+dataFile.close();
 }

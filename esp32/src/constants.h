@@ -57,14 +57,14 @@ const float PORT_MOTOR_TRIM = 0.95;
 class Coordinates
 {
 public:
-  Coordinates(float inputLat, float inputLong)
+  Coordinates(double inputLat, double inputLong)
   {
     longitude = inputLong;
     latitude = inputLat;
   }
 
-  float longitude;
-  float latitude;
+  double longitude;
+  double latitude;
 
   bool isValid()
   {
