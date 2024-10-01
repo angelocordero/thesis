@@ -28,13 +28,14 @@ void debugTask(void *parameters){
   for(;;){
     sendDataThroughSerialPort();
     sendDebugDataToSDCard();
+    sendDebugDataThroughWifi();
     vTaskDelay(500 / portTICK_PERIOD_MS);
   }
 }
 
 void setup()
 {
-  Serial.begin(115200); //! remove on final deployment to save(?) resources
+  Serial.begin(115200); //! remove on final deployment to save resources
   compass.init();
   gps.begin(9600);
   gps.enableRx(true);

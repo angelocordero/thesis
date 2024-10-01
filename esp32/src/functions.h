@@ -5,11 +5,9 @@
 #ifndef FUNCTIONS_h
 #define FUNCTIONS_h
 
-double parseLatLong(String input)
-{
+double parseLatLong(String input) {
   int decimalIndex = input.indexOf('.');
-  if (decimalIndex == -1)
-  {
+  if (decimalIndex == -1) {
     return input.toDouble();
   }
 
@@ -19,19 +17,21 @@ double parseLatLong(String input)
   return degreeString.toDouble() + (minuteString.toDouble() / 60.0);
 }
 
-void getTargetDistance()
+void getDistanceToTarget() 
 {
-  // todo: TESTING
+  Coordinate p1 = currentLoc;
+  Coordinate p2 = targetLoc;
 
-  double lon = currentLoc.longitude - targetLoc.longitude;
-  double lat = currentLoc.latitude - targetLoc.latitude;
+  double latRad1 = p1.latitude * pi / 180;
+  double latRad2 = p2.latitude * pi / 180;
+  double latRadDiff = (p2.latitude - p1.latitude) * pi / 180;
+  double lonRadDiff = (p2.longitude - p1.longitude) * pi / 180;
 
-  double latMidpoint = (currentLoc.latitude + targetLoc.latitude) / 2;
+  double a = pow(sin(latRadDiff / 2), 2) + 
+             pow(sin(lonRadDiff / 2), 2) *
+             cos(latRad1) * cos(latRad2);
 
-  double lonMetersPerDegree = 111412.84 * cos(latMidpoint) - 93.5 * cos(3 * latMidpoint) + 0.118 * cos(5 * latMidpoint);
-  double latMetersPerDegree = 111132.92 - 559.82 * cos(2 * latMidpoint) + 1.175 * cos(4 * latMidpoint) - 0.0023 * cos(6 * latMidpoint);
-
-  distanceToTarget = sqrt(sq(lon * lonMetersPerDegree) + sq(lat * latMetersPerDegree)); // pythagorean theorem
+  distanceToTarget = 2 * 6378137 * asin(sqrt(a));
 }
 
 void getBearingToTarget()
@@ -180,7 +180,7 @@ void navigate()
   if (!currentLoc.isValid() || !targetLoc.isValid() || relativeBearing > 180 || relativeBearing < -180)
     return;
 
-  getTargetDistance();
+  getDistanceToTarget();
 
   if (distanceToTarget < POSITIONAL_UNCERTAINTY_THRESHOLD)
   {

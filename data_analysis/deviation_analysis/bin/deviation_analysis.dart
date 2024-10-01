@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:io';
 import 'dart:math' as math;
-import 'dart:math';
 
 List<Coordinate> coordinates = [];
 
@@ -86,18 +85,16 @@ double getDeviation(Coordinate point, Coordinate start, Coordinate end) {
 }
 
 double getDistance(Coordinate p1, Coordinate p2) {
-  final lon = p1.longitude - p2.longitude;
-  final lat = p1.latitude - p2.latitude;
+  double latRad1 = p1.latitude * pi / 180;
+  double latRad2 = p2.latitude * pi / 180;
+  double latRadDiff = (p2.latitude - p1.latitude) * pi / 180;
+  double lonRadDiff = (p2.longitude - p1.longitude) * pi / 180;
 
-  double latMidpoint = (p1.latitude + p2.latitude) / 2;
+  double a = pow(sin(latRadDiff / 2), 2) + 
+             pow(sin(lonRadDiff / 2), 2) *
+             cos(latRad1) * cos(latRad2);
 
-  double lonMetersPerDegree = 111412.84 * cos(latMidpoint) - 93.5 * cos(3 * latMidpoint) + 0.118 * cos(5 * latMidpoint);
-  double latMetersPerDegree = 111132.92 - 559.82 * cos(2 * latMidpoint) + 1.175 * cos(4 * latMidpoint) - 0.0023 * cos(6 * latMidpoint);
-
-  double lonDistance = lon * lonMetersPerDegree;
-  double latDistance = lat * latMetersPerDegree;
-
-  return math.sqrt((lonDistance * lonDistance) + (latDistance * latDistance));
+  return 2 * 6378137 * asin(sqrt(a));
 }
 
 class Coordinate {
